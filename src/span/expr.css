@@ -1,0 +1,48 @@
+.tree {
+  font-size: 1.5em;
+  white-space: nowrap;
+  text-indent: 0;
+  text-rendering: geometricPrecision;
+  cursor: text;
+}
+
+.container {
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.absolute {
+  position: absolute;
+  display: inline-block;
+}
+
+.filled {
+  position: absolute;
+  background-color: #000;
+}
+
+.italic {
+  font-family: KaTeX_Math;
+  font-style: italic;
+}
+
+.size1 {
+  font-family: KaTeX_Main;
+  font-style: normal;
+}
+
+.size2 {
+  font-family: KaTeX_Size2;
+  font-style: normal;
+}
+
+.size3 {
+  font-family: KaTeX_Size3;
+  font-style: normal;
+}
+
+.size4 {
+  font-family: KaTeX_Size4;
+  font-style: normal;
+}

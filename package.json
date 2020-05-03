@@ -1,0 +1,38 @@
+{
+  "name": "fangorn",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "tap test/test_* --no-check-coverage --node-arg=--require=./test/setupTest.js",
+    "dev": "webpack-dev-server --mode development --config webpack.dev.js"
+  },
+  "author": "Sid Mani",
+  "license": "MIT",
+  "dependencies": {
+    "mithril": "^2.0.4",
+    "sanitize.css": "^11.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.3",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-compat": "^3.5.1",
+    "eslint-plugin-import": "^2.20.2",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "identity-obj-proxy": "^3.0.0",
+    "ignore-styles": "^5.0.1",
+    "jsdom": "^16.2.2",
+    "puppeteer": "^3.0.2",
+    "style-loader": "^1.2.1",
+    "tap": "^14.10.7",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3",
+    "webpack-merge": "^4.2.2"
+  }
+}
