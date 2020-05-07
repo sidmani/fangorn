@@ -1,9 +1,10 @@
 {
   "name": "fangorn",
   "version": "0.0.1",
-  "description": "",
+  "description": "Fast browser math rendering without TeX",
   "main": "src/index.js",
   "scripts": {
+    "demo": "rm -rf demo/; webpack --mode production --display-modules --config webpack.demo.js",
     "test": "tap test/test_* --no-check-coverage --node-arg=--require=./test/setupTest.js",
     "dev": "webpack-dev-server --mode development --config webpack.dev.js"
   },
@@ -17,6 +18,7 @@
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
     "babel-loader": "^8.1.0",
+    "compression-webpack-plugin": "^3.1.0",
     "css-loader": "^3.5.3",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",

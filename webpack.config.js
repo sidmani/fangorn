@@ -5,7 +5,7 @@ module.exports = {
   entry: './test/torture_test/torture_test.js',
   output: {
     filename: 'app.[chunkhash].js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'demo'),
     publicPath: '/',
   },
   plugins: [
