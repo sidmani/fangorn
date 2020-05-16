@@ -26,10 +26,7 @@ function draw(node, env, [expr], [exprFlags]) {
   return {
     span: [
       injected && injected.before,
-      m(fontContainer, {
-        font,
-        onclick: (e) => env.onclick && env.onclick(e, node),
-      }, '√', barSpan),
+      m(fontContainer, { font }, '√', barSpan),
       expr,
       injected && injected.after],
     flags,

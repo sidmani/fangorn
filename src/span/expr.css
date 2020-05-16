@@ -4,22 +4,27 @@
   text-indent: 0;
   text-rendering: geometricPrecision;
   cursor: text;
+  line-height: 1.5;
+  box-sizing: border-box;
 }
 
 .container {
   position: relative;
   display: inline-block;
   vertical-align: bottom;
+  box-sizing: border-box;
 }
 
 .absolute {
   position: absolute;
   display: inline-block;
+  box-sizing: border-box;
 }
 
 .filled {
   position: absolute;
   background-color: #000;
+  box-sizing: border-box;
 }
 
 .italic {

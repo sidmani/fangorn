@@ -43,13 +43,10 @@ function draw(op, env) {
 
   return {
     span: [
-      m(fontContainer, {
-        font,
-        onclick: (e) => env.onclick && env.onclick(e, op),
-      },
-      injected && injected.before,
-      sym,
-      injected && injected.after),
+      m(fontContainer, { font },
+        injected && injected.before,
+        sym,
+        injected && injected.after),
     ],
     flags,
   };

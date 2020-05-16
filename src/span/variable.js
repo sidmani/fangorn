@@ -24,13 +24,10 @@ function draw(node, env) {
 
   const injected = env.injector && env.injector(node, env, flags);
   return {
-    span: m(fontContainer, {
-      font,
-      onclick: (e) => env.onclick && env.onclick(e, node),
-    },
-    injected && injected.before,
-    char,
-    injected && injected.after),
+    span: m(fontContainer, { font },
+      injected && injected.before,
+      char,
+      injected && injected.after),
     flags,
   };
 }

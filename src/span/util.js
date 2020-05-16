@@ -25,7 +25,6 @@ const fontContainer = {
     const font = vnode.attrs.font;
     return m('span', {
       class: `${FONT_TO_STYLE[font]} ${styles.container}`,
-      onclick: vnode.attrs.onclick,
       style: {
         bottom: `${BASELINES['Math-Italic'] - BASELINES[font]}em`,
       },

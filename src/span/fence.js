@@ -25,10 +25,7 @@ function draw(fence, env, [expr], [flags]) {
   return {
     span: [
       injected && injected.before,
-      m(fontContainer, {
-        font,
-        onclick: (e) => env.onclick && env.onclick(e, fence),
-      }, fence.left),
+      m(fontContainer, { font }, fence.left),
       expr,
       m(fontContainer, { font }, fence.right),
       injected && injected.after,

@@ -9,7 +9,6 @@ import func from './func';
 import expr from './expr';
 import atomic from './atomic';
 import root from './root';
-import 'sanitize.css'; // if used independently from the rest of Phydela
 
 const boxes = {
   variable,
@@ -68,9 +67,6 @@ function draw(current, environment) {
     // certain nodes support injection of arbitrary dom nodes
     // in order to outsource things like the caret, guides
     childEnv.injector = environment.injector;
-
-    // event handlers
-    childEnv.onclick = environment.onclick;
 
     // draw the child, and store the results
     let { span, flags } = draw(child, childEnv);
@@ -144,7 +140,6 @@ export default {
   view(vnode) {
     return draw(vnode.attrs.tree, {
       injector: vnode.attrs.injector,
-      onclick: vnode.attrs.onclick,
     }).span;
   },
 };

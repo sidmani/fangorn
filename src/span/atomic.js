@@ -11,13 +11,10 @@ function draw(node, env) {
   flags.leftSpacing = node.leftSpacing && { q: 2 * INLINE_PADDING, heat: -100 };
   flags.rightSpacing = node.rightSpacing && { q: 2 * INLINE_PADDING, heat: 100 };
   return {
-    span: m(fontContainer, {
-      font: node.font,
-      onclick: (e) => env.onclick && env.onclick(e, node),
-    },
-    injected && injected.before,
-    node.char,
-    injected && injected.after),
+    span: m(fontContainer, { font: node.font },
+      injected && injected.before,
+      node.char,
+      injected && injected.after),
     flags,
   };
 }
