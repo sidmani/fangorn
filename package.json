@@ -27,7 +27,7 @@
     "html-webpack-plugin": "^4.3.0",
     "identity-obj-proxy": "^3.0.0",
     "ignore-styles": "^5.0.1",
-    "jsdom": "^16.2.2",
+    "jsdom": "^16.5.0",
     "puppeteer": "^3.0.4",
     "style-loader": "^1.2.1",
     "tap": "^14.10.7",
