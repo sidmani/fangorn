@@ -11,7 +11,8 @@
   "author": "Sid Mani",
   "license": "MIT",
   "dependencies": {
-    "mithril": "^2.0.4"
+    "mithril": "^2.0.4",
+    "sanitize.css": "^13.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
